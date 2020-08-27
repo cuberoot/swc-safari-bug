@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+
+<body>
+    <sp-theme scale="medium" color="light">
+        <canvas></canvas>
+        <sp-dropdown label="Select a Country with a very long label, too long in fact">
+            <sp-menu>
+                <sp-menu-item> Deselect </sp-menu-item>
+                <sp-menu-item> Select inverse </sp-menu-item>
+                <sp-menu-item> Feather... </sp-menu-item>
+                <sp-menu-item> Select and mask... </sp-menu-item>
+                <sp-menu-divider></sp-menu-divider>
+                <sp-menu-item> Save selection </sp-menu-item>
+                <sp-menu-item disabled> Make work path </sp-menu-item>
+            </sp-menu>
+        </sp-dropdown>
+    </sp-theme>
+    <script src="./index.js"></script>
+    <script>
+        const canvas = document.querySelector('canvas')
+
+        // 2D Version
+        // const context = canvas.getContext('2d');
+        // context.fillRect(0, 0, 500, 500)
+
+        // WebGL Version
+        const gl = canvas.getContext("webgl");
+        gl.clearColor(0.0, 0.0, 0.0, 1.0);
+        gl.clear(gl.COLOR_BUFFER_BIT);
+
+    </script>
+</head>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "name": "swc-safari-bug",
+  "version": "1.0.0",
+  "description": "Testing canvas bug with Safari",
+  "main": "index.js",
+  "author": "Adobe Inc.",
+  "license": "MIT",
+  "scripts": {
+    "start": "yarn parcel index.html"
+  },
+  "dependencies": {
+    "@spectrum-web-components/bundle": "^0.14.6",
+    "parcel": "1.12.4"
+  }
+}
