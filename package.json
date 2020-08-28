@@ -6,7 +6,8 @@
   "author": "Adobe Inc.",
   "license": "MIT",
   "scripts": {
-    "start": "yarn parcel index.html"
+    "start": "yarn parcel index.html",
+    "build": "yarn parcel build index.html"
   },
   "dependencies": {
     "@spectrum-web-components/bundle": "^0.14.6",
