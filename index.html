@@ -21,6 +21,22 @@
                 <sp-menu-item disabled> Make work path </sp-menu-item>
             </sp-menu>
         </sp-dropdown>
+        <overlay-trigger placement="none" type="modal">
+            <sp-button slot="trigger">Open a Modal</sp-button>
+            <sp-dialog-wrapper
+                slot="click-content"
+                open underlay
+                id="dialog-wrapper-demo"
+                headline="Dialog title"
+                mode="fullscreen"
+                confirm-label="Keep Both"
+                secondary-label="Replace"
+                cancel-label="Cancel"
+                footer="Content for footer"
+            >
+                Content of the dialog
+            </sp-dialog-wrapper>
+        </overlay-trigger>
     </sp-theme>
     <script src="./index.js"></script>
     <script>

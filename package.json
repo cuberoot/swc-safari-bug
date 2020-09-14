@@ -10,7 +10,7 @@
     "build": "yarn parcel build index.html"
   },
   "dependencies": {
-    "@spectrum-web-components/bundle": "^0.14.6",
+    "@spectrum-web-components/bundle": "0.15.2-alpha.0",
     "parcel": "1.12.4"
   }
 }
